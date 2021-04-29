@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">JCreativos</div>
+        <div class="header__titulo">Juego de piedra Papel o Tijera</div>
+    </header>
+    <section class="section_container">
+        <section class="section__mensajes">
+            <div class="conteo">
+                <h3>Numero de Juego</h3>
+                <p id="conteo">0</p>
+            </div>
+            <div class="mensaje">
+                <h3>Mensaje</h3>
+                <div><p id="mensaje">Listo para Iniciar</p></div>
+            </div>
+            <div class="opcionmaquina">
+                <h3>Maquina:</h3>
+                <p id="opcionmaquina">Preparado</p>
+            </div>
+        </section>
+        <div class="section__puntaje">
+            <span id="var-persona">0</span>-<span id="var-maquina">0</span>
+        </div>
+        <div class="section__nota_puntaje">
+            <span>Persona</span> - <span>Maquina</span>
+        </div>
+        <div class="section__eleccion">
+            <div class="option_piedra" onclick="juego('Piedra');"></div>
+            <div class="option_papel" onclick="juego('Papel');"></div>
+            <div class="option_tijera" onclick="juego('Tijera');"></div>
+        </div>
+        <div class="reiniciar_juego">
+            <button class="button_reiniciar" onclick="reiniciar_juego();">Reiniciar Juego</button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./img/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #6c8686;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: rgba(255, 250, 131, 0.6);
+}
+.header__logo{
+    padding: 10px 30px;
+    color: #473F3B;
+    font-size: 30px;
+    font-weight: 900;
+}
+.header__titulo{
+    padding: 10px 40px;
+    color: #29273C;
+    font-size: 20px;
+    font-weight: 700;
+}
+.section_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.section__puntaje{
+    width: 400px;
+    height: 180px;
+    margin: auto;
+    font-size: 150px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    -webkit-text-stroke: 3px black;
+}
+.section__eleccion{
+    width: 500px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__eleccion .soption{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    cursor: pointer;
+}
+
+
+.option_piedra{
+    width: 160px;
+    height: 160px;
+    background-image: url(./img/piedra.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.option_piedra:hover{
+    background-size:110%;
+    transition: all 0.2s ease;
+}
+
+.option_papel{
+    width: 160px;
+    height: 160px;
+    background-image: url(./img/papel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.option_papel:hover{
+    background-size:103%;
+    transition: all 0.2s ease;
+}
+
+.option_tijera{
+    width: 160px;
+    height: 160px;
+    background-image: url(./img/tijera.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;;
+}
+
+.option_tijera:hover{
+    background-size:110%;
+    transition: all 0.2s ease;
+}
+
+.section__mensajes{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    height: 200px;
+    width: 100%;
+}
+
+.section__mensajes .conteo{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(62, 92, 30, .6);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.section__mensajes .conteo p{
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.section__mensajes .mensaje{
+    width: 90%;
+    margin: 0 auto;
+    background-color:rgba(62, 92, 30, .6);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.section__mensajes .mensaje div{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.section__mensajes .mensaje p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section__mensajes .opcionmaquina{
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(62, 92, 30, .6);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.section__mensajes .opcionmaquina p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section__nota_puntaje{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    -webkit-text-stroke: 2px black;
+}
+
+.reiniciar_juego{
+    margin: 0 auto;
+}
+
+.button_reiniciar{
+    padding: 15px;
+    background-color: rgb(255, 250, 131);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_reiniciar:hover{
+    background-color: rgb(226, 226, 96);
+}
