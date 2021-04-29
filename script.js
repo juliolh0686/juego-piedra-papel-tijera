@@ -48,7 +48,7 @@ var puntoganador=0;
             puntoganador=2;
             break;
         default:
-            mensaje="Gano la Maquina";
+            mensaje="Ganó la Maquina";
             puntoganador=0;
     }
 
@@ -68,7 +68,7 @@ var puntoganador=0;
         if(Number(document.getElementById('var-persona').innerHTML) > Number(document.getElementById('var-maquina').innerHTML)){
             document.getElementById('mensaje').innerHTML = "Ganaste la Partida - Felicitaciones";
         }else if(Number(document.getElementById('var-persona').innerHTML) < Number(document.getElementById('var-maquina').innerHTML)){
-            document.getElementById('mensaje').innerHTML = "Gano la Maquina -Intentar de Nuevo";
+            document.getElementById('mensaje').innerHTML = "Ganó la Máquina -Intentar de Nuevo";
         } else {
             document.getElementById('mensaje').innerHTML ="Empate - intentar de Nuevo";
         }
